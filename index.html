@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter sign up success Message main</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+      <div class="pop-up" id="popBox">
+        <!--Pop Up Box Start-->
+        <img src="CSS/images/icon-success.svg" alt="" />
+        <h1 class="success-text">Thanks for Subscribing!</h1>
+        <p class="success-para">
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com.</span> Please open it and click the button
+          inside to confirm your subcription.
+        </p>
+        <button class="dis-btn" id="dims-btn">Dismiss Message</button>
+      </div>
+      <!--Pop Up Box end-->
+      <div class="container" id="conatiner">
+        <!--Main Content Box Start-->
+        <div class="main-box" id="mainBx">
+          <div class="content-side">
+            <h1 class="st-text">Stay updated!</h1>
+            <p class="jo-text">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+
+            <div class="highlights-content">
+              <div class="content1">
+                <img src="CSS/images/icon-list.svg" alt="" />
+                <p>Product discovery and building what matters</p>
+              </div>
+              <div class="content1">
+                <img src="CSS/images/icon-list.svg" alt="" />
+                <p>Measuring to ensure updates are a success</p>
+              </div>
+              <div class="content1">
+                <img src="CSS/images/icon-list.svg" alt="" />
+                <p>And much more!</p>
+              </div>
+            </div>
+            <div class="email-input">
+              <form class="form-email" action="">
+                <div class="lblError">
+                  <label for="email" class="lbel">Email address</label>
+                  <div class="error-message" id="emailError"></div>
+                </div>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="email@company.com"
+                />
+
+                <button type="submit" class="sub-btn" id="dims-btn">
+                  Subscribe to monthly newsletter
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="image-side">
+            <picture class="desk-ill">
+              <source
+                media="(max-width: 768px)"
+                srcset="CSS/images/illustration-sign-up-mobile.svg"
+                id="mobile-image"
+              />
+              <img
+                class="desk-ill"
+                src="CSS/images/illustration-sign-up-desktop.svg"
+                alt="Gabrielle"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!--Main Content Box Ends-->
+    </main>
+  </body>
+  <script src="js/script.js"></script>
+</html>
